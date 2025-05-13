@@ -5,12 +5,11 @@ def get_config():
 
     parser.add_argument('--data_path', type=str, default='./HEST', help='')
     parser.add_argument('--project_path', type=str, default='./CMRCNet', help='')
-    parser.add_argument('--cancer_list', type=list, default=['CMRCNet'], help='')
+    parser.add_argument('--cancer_list', type=list, default=['COAD'], help='')
 
     parser.add_argument('--save_dir', type=str, default="./checkpoints", help='')
     parser.add_argument('--num_workers', type=int, default=0, help='')
 
-    # 模型相关
     parser.add_argument('--model_name', type=str, default='vit_base_patch32_clip_224', help='')
 
     parser.add_argument('--image_embedding', type=int, default=3072, help='resnet：2048，vit_base_patch32_clip_224：3072 ')
