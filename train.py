@@ -14,7 +14,6 @@ from config import get_config
 from model.models import CLIPModel_ViT_itm_v14_MSE
 
 
-# 训练过程
 def train_one_epoch(epoch, model, data_loader, optimizer, scaler, ema_model, accumulation_steps, print_seq, logger):
     model.train()
     start_time = time.time()
