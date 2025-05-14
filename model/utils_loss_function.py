@@ -14,9 +14,9 @@ class ReconstructionLoss(nn.Module):
     def __init__(self, loss_type='L2'):
         super(ReconstructionLoss, self).__init__()
         if loss_type == 'L2':
-            self.loss_fn = nn.MSELoss()  # 均方误差损失
+            self.loss_fn = nn.MSELoss() 
         elif loss_type == 'L1':
-            self.loss_fn = nn.L1Loss()   # 绝对差损失
+            self.loss_fn = nn.L1Loss()  
         else:
             raise ValueError("loss_type should be either 'L2' or 'L1'")
 
